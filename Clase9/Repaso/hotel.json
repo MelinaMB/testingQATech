@@ -1,0 +1,34 @@
+{
+    "usuario": {
+
+        "id": 120,
+        "nombre": "Melina",
+        "email": "melinam.@gmail.com",
+        "telefono": 12345678
+
+    },
+
+    "busqueda": {
+
+        "fecha_chackin": "01-06-2025",
+        "fecha_chackout": "20-06-2025",
+        "cant_personas": 2,
+        "habitaciones_disponibles": [
+            {
+
+                "tipo": "Suite",
+                "precio_x_noche": 5000,
+                "servivios": ["wifi", "desayuno", "pileta", "limpieza"]
+
+            },
+
+            {
+                "tipo": "Doble",
+                "precio_x_noche": 2500,
+                "servicios": ["wifi", "desyuno", "limpieza"]
+
+            }
+        ]
+
+    }
+}
