@@ -1,0 +1,32 @@
+{
+    "cliente": {
+        "usuario": "pepe",
+        "email": "pepe@gmail.com",
+        "telefono": 12345678
+    },
+
+    "menu": {
+        "pollo_con_papas_fritas": 5000,
+        "noquis_con_salsa_blanca": 3500,
+        "pastel_de_papa": 4500,
+        "hamburguesa_completa_con_papas_fritas": 5000
+
+    },
+
+    "pedido": {
+        "dia": "10/06/25",
+        "horario": "12:30",
+        "comida": [
+            {
+            "menu": "hamburguesa_completa_con_papas_fritas",
+            "cantidad": 2
+            },
+
+            {
+                "menu": "pollo_con_papas_fritas",
+                "cantidad": 1
+            }
+        ],
+        "total": 15000 
+    }
+}

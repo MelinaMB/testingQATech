@@ -30,5 +30,18 @@
             }
         ]
 
+    },
+
+    "reserva": {
+        "habitacion_seleccionada": "Doble",
+        "cant_noche": 5,
+        "total": 12500
+    },
+
+    "pago": {
+        "metodo_pago": ["Credito", "Debito", "Transferencia", "Mercado Pago"],
+        "seleccionado": "Credito",
+        "estado": "Aprobado"
     }
-}
+
+}    

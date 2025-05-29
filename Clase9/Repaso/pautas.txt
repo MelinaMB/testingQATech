@@ -1,0 +1,6 @@
+Escenario: Flujo del usuario en la App del Hotel
+
+1. Registro.
+2. Busqueda y seleccion de la habitacion.
+3. Reserva.
+4. Pago.
