@@ -1,0 +1,31 @@
+{
+    "cliente": {
+        "nombre": "Axel Henderson",
+        "telefono": 123456789,
+        "direccion": "dirección de entrega"
+    },
+    "menues" : {
+        "burguer" : [
+            {
+                "hamburguesa": ["Hamburguesa de Carne", "Hamburguesa de Pollo"],
+                "precio_hamburguesa": "2000"
+            },
+            {
+
+                "pizza":["Muzzarella", "Fugazzeta", "Jamón y Queso"],
+                "precio_pizza": "5000"
+            }
+        ]
+    },
+    "orden" : {
+        "nro_orden": "245A",
+        "pedido": "Hamburguesa de Pollo",
+        "cantidad": "2",
+        "tipo_pago": ["Mercado Pago", "Crédito", "Débito"]
+    },
+    "pago": {
+        "pago_seleccionado": "Mercado Pago",
+        "total":4000,
+        "estado": "Aprobado"
+    }
+}

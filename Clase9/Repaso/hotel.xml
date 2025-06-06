@@ -1,0 +1,51 @@
+<reservaHotel>
+    <usuario>
+        <id>120</id>
+        <nombre>Axel Henderson</nombre>
+        <email>hendersonaxel06@gmail.com</email>
+        <telefono>123456789</telefono>
+    </usuario>
+
+    <busqueda>
+        <fecha_checkin>01-06-2025</fecha_checkin>
+        <fecha_checkout>20-06-2025</fecha_checkout>
+        <cant_personas>2</cant_personas>
+        <habitaciones_diponibles>
+            <habitacion>
+                <tipo>Suite</tipo>
+                <precio_x_noche>5000</precio_x_noche>
+                <servicios>
+                    <servicio>WiFi</servicio>
+                    <servicio>Desayuno</servicio>
+                    <servicio>Pileta</servicio>
+                    <servicio>Limpieza</servicio>
+                </servicios>
+            </habitacion>
+            <habitacion>
+                <tipo>Doble</tipo>
+                <precio_x_noche>2500</precio_x_noche>
+                <servicios>
+                    <servicio>WiFi</servicio>
+                    <servicio>Limpieza</servicio>
+                </servicios>
+            </habitacion>
+        </habitaciones_diponibles>
+    </busqueda>
+
+    <reserva>
+        <habitacion_seleccionada>Doble</habitacion_seleccionada>
+        <cant_noche>5</cant_noche>
+        <total>12500</total>
+    </reserva>
+
+    <pago>
+        <metodos_pago>
+            <metodo>Crédito</metodo>
+            <metodo>Débito</metodo>
+            <metodo>Transferencia</metodo>
+            <metodo>Mercado Pago</metodo>
+        </metodos_pago>
+        <seleccionado>Crédito</seleccionado>
+        <estado>Aprobado</estado>
+    </pago>
+</reservaHotel>

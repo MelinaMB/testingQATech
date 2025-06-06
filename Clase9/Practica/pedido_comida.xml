@@ -1,0 +1,40 @@
+<pedidoDelivery>
+  <cliente>
+    <nombre>Axel Henderson</nombre>
+    <telefono>123456789</telefono>
+    <direccion>dirección de entrega</direccion>
+  </cliente>
+
+  <menues>
+    <burguer>
+      <item>
+        <hamburguesa>Hamburguesa de Carne</hamburguesa>
+        <hamburguesa>Hamburguesa de Pollo</hamburguesa>
+        <precio_hamburguesa>2000</precio_hamburguesa>
+      </item>
+      <item>
+        <pizza>Muzzarella</pizza>
+        <pizza>Fugazzeta</pizza>
+        <pizza>Jamón y Queso</pizza>
+        <precio_pizza>5000</precio_pizza>
+      </item>
+    </burguer>
+  </menues>
+
+  <orden>
+    <nro_orden>245A</nro_orden>
+    <pedido>Hamburguesa de Pollo</pedido>
+    <cantidad>2</cantidad>
+    <tipo_pago>
+      <metodo>Mercado Pago</metodo>
+      <metodo>Crédito</metodo>
+      <metodo>Débito</metodo>
+    </tipo_pago>
+  </orden>
+
+  <pago>
+    <pago_seleccionado>Mercado Pago</pago_seleccionado>
+    <total>4000</total>
+    <estado>Aprobado</estado>
+  </pago>
+</pedidoDelivery>
