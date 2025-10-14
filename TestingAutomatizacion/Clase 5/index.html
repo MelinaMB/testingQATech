@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main class="container">
+    <h1 id="titulo_principal">Calculadora</h1>
+    <form id="form" name="form" class="form">
+        <div>
+            <div class="form-div">
+                <label for="num1">Numero 1:</label>
+                <input type="number" name="num1" id="num1" required>
+
+            </div>
+            <div class="form-div">
+                <label for="num2">Numero 2:</label>
+                <input type="number" name="num2" id="num2" required>
+
+            </div>
+            <div class="form-div">
+                <label for="operaciones">Operacion:</label>
+                <select name="operaciones" id="operaciones">
+                    <option value="seleccion">Seleccion</option>
+                    <option value="sumar">Suma</option>
+                    <option value="restar">Resta</option>
+                    <option value="multiplicar">Multiplicacion</option>
+                    <option value="dividir">Division</option>
+                </select>
+            </div>
+            <div class="form-div">
+                <button type="submit" id="btn-clacular" name="btn-calcular">Calcular</button>
+            </div>
+            <div class="form-div">
+                <label for="resultado">Resultado:</label>
+                <input type="text" id="resultado" name="resultado" readonly>
+
+
+            </div>
+        </div>
+    </form>
+
+    </main>
+</body>
+</html>
