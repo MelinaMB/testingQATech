@@ -21,3 +21,6 @@ if edad >= 18:
     print(nombre + "Es mayor de edad")
 else:
     print(nombre + "Es menor de edad")
+
+# while
+

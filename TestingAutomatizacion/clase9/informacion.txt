@@ -1,0 +1,26 @@
+Como debe estar estructurado el proyecto
+
+proyecto---->main.py
+        ---->conftest.py
+        ---->test---->test_login.py
+                 ---->test_carrito.py
+        ---->utils.py
+
+Con respecto a lo que deberia hacer con la parte logica de la pagina
+Yo deberia tener en cada paso de mi pagina separado en distintas funciones
+y despues las voy a llamar adentro del test para hacer las validaciones que yo necesite
+yo no deberia tener por ejemplo esto en el test:
+
+que es buscar un elemento en la pagina
+productos = driver.find_elements(By.CLASS_NAME,"inventory_item")
+
+No es una buena practica, lo que deberia tener en utils es una funcion que haga exactamente eso globalizarla en caso de requerirlo y 
+mandarla a la prueba 
+
+Patrones
+- Page Object Model(POM):
+Un patron especifico para automatizacion que encapsula cada pantalla en una clase y expone metodos de alto nivel.
+Propone representar cada pagina o vista de tu aplicacion como un objeto(clase) que:
+. Conoce sus elementos(locators)
+. Sabe actuar sobre ellos mediante métodos significativos
+. Oculta detalles de UI al resto del código
