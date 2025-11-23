@@ -24,3 +24,10 @@ Propone representar cada pagina o vista de tu aplicacion como un objeto(clase) q
 . Conoce sus elementos(locators)
 . Sabe actuar sobre ellos mediante métodos significativos
 . Oculta detalles de UI al resto del código
+
+Manejar los datos
+- Deben estar separados del codigo los datos.
+Para tener un mantenimiento mas facil del codigo y la reutilizacion 
+sin tener que modificar todo el codigo o la modificar la logica.
+La idea es que esten en un archivo distinto y exportarlo desde ahi los datos 
+Tener los datos que se prueban por un lado y por el otro tener la logica de como se prueba

@@ -2,6 +2,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait #importa la espera
 from selenium.webdriver.support import expected_conditions as EC #importa las condiciones del wait
+import time
 
 class LoginPage:
 
@@ -49,5 +50,11 @@ class LoginPage:
     def login_completo(self,usuario,password):
         self.completar_user(usuario)
         self.completar_pass(password)
+        time.sleep(3)
         self.hacer_click_button()
         return self
+    
+    #aca debe estar la funcion de capturar el mensaje de error
+    def obtener_error(self):
+        div_error = self.wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR,".error-message-container h3")))
+        return div_error.text

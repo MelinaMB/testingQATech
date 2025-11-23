@@ -32,6 +32,8 @@ def driver():
 
 #globalizo la fincion de login
 @pytest.fixture
-def login_in_driver(driver):
-    LoginPage(driver).abrir_pagina().login_completo("standard_user", "secret_sauce")
+def login_in_driver(driver, usuario, password):
+    LoginPage(driver).abrir_pagina().login_completo(usuario, password)
     return driver
+
+#aca deberia hacer otro conftest para login invalido con su mensaje de error
