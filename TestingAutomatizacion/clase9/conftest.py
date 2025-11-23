@@ -5,7 +5,7 @@
 #son cosas primordiales que se repiten en la gran mayoria de las pruebas
 import pytest
 from selenium import webdriver
-from utils import login
+
 from selenium.webdriver.chrome.options import Options
 from pages.login_page import LoginPage
 
