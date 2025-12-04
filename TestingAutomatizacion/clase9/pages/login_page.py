@@ -1,17 +1,20 @@
 #
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait #importa la espera
-from selenium.webdriver.support import expected_conditions as EC #importa las condiciones del wait
+from selenium.webdriver.common.by import By #By te permite localizar elementos usando diferentes estrategias(ID, CSS, XPath, etc)
+from selenium.webdriver.support.ui import WebDriverWait #importa la espera 
+from selenium.webdriver.support import expected_conditions as EC #importa las condiciones que puedes esperar (elemento visible, clickable, etc.)
 import time
 
 class LoginPage:
 
-    #url de la pagina a probar
+    #url de la pagina a probar la defino como una constante
     URL = "https://www.saucedemo.com/"
 
+    #Locators
     #locators es la forma de identificar a los elementos en la pagina web
     #para nosotros despues interactuar con ellos a traves de selenium y poder utilizarlos
     #si los atributos cambian aca es donde hay que venir a cambiar los
+    #los locators se definen como tuplas(estrategia, valor)
+    #las variables que empiezan con _(guion bajo) son "privadas" por convención
 
     _USER_INPUT = (By.ID,"user-name")
     _PASS_INPUT = (By.ID, "password")
@@ -21,10 +24,10 @@ class LoginPage:
     #self dentro de una clase nos referimos a nosotros mismos
     #es como si estuviesemos ejecutando alguna funcion dentro de esta clase
     #dentro del al estructura de una clase cuando hago una funcion primero me llamo a mi mismo y despues al driver
-
+    #este es el constructor ambos guion bajo van dobles, se va a ejecutar automaticamente cuando creo una instancia
     def __init__(self, driver):
-        self.driver = driver
-        self.wait = WebDriverWait(driver, 10)
+        self.driver = driver #guardo el driver como atributo de la instancia. Aca self.driver se convierte en un atributo del objeto
+        self.wait = WebDriverWait(driver, 10) #creo un WebDriverWait con timeout de 10 segundos. Otro atributo
 
     #hago una funcion solo para abrir el navegador uso self para luego utilizar la url
     def abrir_pagina(self):

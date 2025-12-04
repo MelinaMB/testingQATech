@@ -3,7 +3,8 @@ import pytest
 test_files = [
     "tests/test_login.py",
     "tests/test_navegacion.py",
-    "tests/test_carrito"
+    "tests/test_carrito.py",
+    "tests/test_inventory.py"
 ]
 
 pytest_args = test_files + ["--html=report.html","--self-contained-html","-v"]

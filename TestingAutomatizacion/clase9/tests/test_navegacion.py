@@ -36,5 +36,5 @@ def test_navegacion(login_in_driver):
         raise #se finaliza la prueba a traves del error 
     finally:
         driver.quit() 
-         
+
 
