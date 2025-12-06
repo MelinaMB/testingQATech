@@ -37,3 +37,13 @@ def login_in_driver(driver, usuario, password):
     return driver
 
 #aca deberia hacer otro conftest para login invalido con su mensaje de error
+
+#--------------------------------------------------------------------------
+
+@pytest.fixture
+def url_base():
+    return "https://reqres.in/api/users"
+
+@pytest.fixture
+def header_request():
+    return {"x-api-key": "reqres_be64950124cf4da780382775b0a9adcb"}

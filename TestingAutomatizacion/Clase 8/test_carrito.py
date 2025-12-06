@@ -8,7 +8,7 @@ def test_carrito(login_in_driver):
     try:
         driver = login_in_driver
         #interacciones
-       
+
         productos = driver.find_elements(By.CLASS_NAME,"inventory_item")
         productos[0].find_element(By.TAG_NAME, "button").click()
 

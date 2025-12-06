@@ -1,14 +1,16 @@
 import requests
+import pytest
 
-def test_post_users():
+@pytest.mark.api
+def test_post_users(url_base,header_request):
     #vamos a utilizar la api reqres.in
-    url = 'https://reqres.in/api/users'
+    url = f'{url_base}'
 
 
-    encabezado = {"x-api-key": "reqres_be64950124cf4da780382775b0a9adcb"}#autorizacion para pode uzar la api https://reqres.in/signup
+    
 
     payload = {"name":"Jose","job":"Profesor"}
-    response = requests.post(url,headers=encabezado,json=payload)
+    response = requests.post(url,headers=header_request,json=payload)
 
     print(f"Status: {response.status_code}")
     print(f"Response: {response.text}")

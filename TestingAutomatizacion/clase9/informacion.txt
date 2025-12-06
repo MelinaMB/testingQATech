@@ -45,3 +45,23 @@ ej: productos = self.driver.find_elements(*self._INVENTORY_ITEMS)
 EC.visibility_of_all_elements_located(locator) espera un solo paremetro (una tupla completa)
 Por lo que en este caso no hace falta desempaquetar
 ej:self.wait.until(EC.visibility_of_all_elements_located(self._INVENTORY_ITEMS))
+
+
+Faker
+Es una libreria que genera datos falsos aleatorios pero realistas
+Es util:
+-Para no crear manualmente 1000 usuarios de prueba
+-Cuando necesitas datos unicos en cda ejecucion
+-Cuando quieres probar con diferentes tipos de caracteres y formatos
+-Cuando buscas descubrir bugs con datos inesperados 
+
+API 
+puente/enlace 
+API utilizada Reqres
+@pytest.mark...
+py -m pytest -m api -v  
+va a agarrar todas los test y los va a correr uno tras otro
+me aparecen advertencias porque no reconose en este caso el mark personalizado que se llama api
+para esto tengo que agregarlo en un archivo llamado pytest.ini
+@pytest.mark.skip(reason="Desactivada porque sigue en desarollo") puedo saltear un test utilizando el marcador skip
+hay marcadores prediseñados

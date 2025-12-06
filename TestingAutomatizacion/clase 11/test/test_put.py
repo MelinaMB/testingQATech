@@ -1,6 +1,9 @@
 import requests
 import time
+import pytest
 
+@pytest.mark.api
+#@pytest.mark.skip(reason="Desactivada porque sigue en desarollo") puedo saltear un test utilizando el marcador skip
 def test_put_users():
     encabezado = {"x-api-key": "reqres_be64950124cf4da780382775b0a9adcb"}
 
@@ -25,4 +28,8 @@ def test_put_users():
     body = response.json()
 
     assert "updatedAt" in body
-    assert isinstance #funcion de pytest 
+    #validacion de datos
+    assert isinstance(body["name"],str) #funcion de pytest, valido que los datos sean string, desde el body le pido el dato name
+
+    #podemos comparar un dato con el que me esta devolviendo el servidor
+    assert body["name"] == payload["name"]
