@@ -7,7 +7,7 @@ import pytest
 from pages.cart_page import CartPage
 from pages.inventory_page import InventoryPage
 from utils.lector_json import leer_json_productos
-
+from pages.login_page import LoginPage
 RUTA_JSON = "datos/productos.json"
 
 @pytest.mark.parametrize("usuario, password",[("standard_user","secret_sauce")])
@@ -16,6 +16,7 @@ def test_cart_json(login_in_driver,usuario,password,nombre_producto):
     
     try:
         driver = login_in_driver
+        LoginPage(driver).login_completo(usuario,password)
         cart_page = CartPage(driver)
         inventory_page = InventoryPage(driver)
 

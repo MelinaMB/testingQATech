@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 import pytest
 from pages.login_page import LoginPage
 from faker import Faker
-
+from pages.login_page import LoginPage
 #inicializamos faker 
 fake = Faker()
 
@@ -16,7 +16,7 @@ fake = Faker()
 def test_login_validation(login_in_driver, usuario, password, debe_funcionar):#le pasamos la funcion login_in_driver
     try:
         driver = login_in_driver # +todo lo que me devuelve la funcion login la pongo en una variables driver ya que la vamos a utilizar nuevamente
-
+        LoginPage(driver).login_completo(usuario,password)
         if debe_funcionar == True:
             #Validacion de la redireccion de la pagina
             assert "/inventory.html" in driver.current_url, "No se redirigio correctamente al inventario"#comparo la lo que metrajo la funcion login_in_driver con la url si no coiciden doy un mensaje de No se dirigio la pagina 

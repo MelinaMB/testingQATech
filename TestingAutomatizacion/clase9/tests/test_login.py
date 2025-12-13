@@ -11,8 +11,9 @@ from utils.logger import logger
 def test_login_validation(login_in_driver, usuario, password, debe_funcionar):#le pasamos la funcion login_in_driver
     try:
         logger.info("Completando con los datos de usuarios")
+        
         driver = login_in_driver # +todo lo que me devuelve la funcion login la pongo en una variables driver ya que la vamos a utilizar nuevamente
-
+        LoginPage(driver).login_completo(usuario,password)
         if debe_funcionar == True:
             logger.info("verificando redireccionamiento dentro de la pagina")
             #Validacion de la redireccion de la pagina

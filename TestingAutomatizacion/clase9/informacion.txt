@@ -65,3 +65,5 @@ me aparecen advertencias porque no reconose en este caso el mark personalizado q
 para esto tengo que agregarlo en un archivo llamado pytest.ini
 @pytest.mark.skip(reason="Desactivada porque sigue en desarollo") puedo saltear un test utilizando el marcador skip
 hay marcadores prediseñados
+
+Captura de pantalla cuando hay un error

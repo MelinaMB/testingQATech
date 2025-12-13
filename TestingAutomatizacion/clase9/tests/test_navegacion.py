@@ -2,14 +2,14 @@ from selenium import webdriver
 import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
-
+from pages.login_page import LoginPage
 
 def test_navegacion(login_in_driver):
     
 
     try:
         driver = login_in_driver
-
+        LoginPage(driver).login_completo(usuario,password)
         # comparo el titulo de la pagina con el que yo espero que tenga
         assert driver.title == "Swag Labs" 
 
